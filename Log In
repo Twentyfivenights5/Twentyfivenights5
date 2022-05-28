@@ -1,0 +1,16 @@
+galactic_username = str(input("Galactic Username: \n"))
+galactic_password = str(input("\nGalactic Password: \n"))
+# input username and password.
+while len(galactic_password)<12:
+    # The program should check to see that the password is at least 12 characters,
+    # If not, it will ask you to input the password until it is 12 or more.
+    galactic_password = str(input("\nChoose a new galactic password that has 12 stars or more: \n"))
+    # confirms that you have gotten the right password
+print("Congratulations, it has at least 12 stars!\n")
+    
+# Now you will re enter the password.
+reenter_galactic_password=str(input("\nRe-enter galactic password: \n"))
+#if they are not equal the code will asks you to reenter until they are the same. 
+while reenter_galactic_password!=galactic_password:
+    reenter_galactic_password=str(input("\n They are not in the same galaxy, check another galaxy: \n"))
+print("\nWelcome to the galaxy {}".format(galactic_username))
